@@ -1,8 +1,5 @@
 package com.example.paulo.mychat;
 
-/**
- * Created by paulo on 6/9/2017.
- */
 
 public class ItemsContactos {
         public int id;
