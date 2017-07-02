@@ -8,13 +8,10 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import java.io.IOException;
 
-/**
- * Created by paulo on 6/28/2017.
- */
 
-public class DBHelper extends SQLiteOpenHelper{
+public class DB extends SQLiteOpenHelper{
     public static final String Database_Name = "MyChat.db";
-    public DBHelper(Context context) {
+    public DB(Context context) {
         super(context, Database_Name, null, 1);
     }
 
