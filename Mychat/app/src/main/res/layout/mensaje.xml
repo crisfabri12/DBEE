@@ -2,6 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/holo_red_dark"
     android:layout_height="match_parent"
     tools:context="com.example.paulo.mychat.MensajeActivity">
 
@@ -28,6 +29,7 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignTop="@+id/button1"
+            android:background="@android:color/white"
             android:layout_toLeftOf="@+id/sendMessageButton"
             android:hint="Mensaje"
             android:layout_weight="0.72"
@@ -46,3 +48,4 @@
 
 
 </RelativeLayout>
+
