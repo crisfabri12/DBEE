@@ -3,7 +3,6 @@ package com.example.paulo.mychat;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.ButtonBarLayout;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -17,9 +16,9 @@ public class EditarContacto extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_editar_contacto);
+        setContentView(R.layout.editar_contacto);
         final int idContacto = Integer.parseInt(getIntent().getExtras().getString("id"));
-        final DBHelper db = new DBHelper(this);
+        final DB db = new DB(this);
         nombre = (EditText)findViewById(R.id.input_nombre);
         apellido = (EditText) findViewById(R.id.input_apellido);
         correo = (EditText) findViewById(R.id.input_correo);
