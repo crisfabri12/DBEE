@@ -3,15 +3,13 @@ package com.example.paulo.mychat;
 import android.database.Cursor;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ListView;
-import java.sql.Timestamp;
+
 import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.ArrayList;
 import java.util.Collections;
 
@@ -22,11 +20,11 @@ public class MensajeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_mensaje);
+        setContentView(R.layout.mensaje);
         listView=(ListView)findViewById(R.id.listaMensajes);
         send = (ImageButton)findViewById(R.id.sendMessageButton);
         mensaje = (EditText)findViewById(R.id.messageEditText);
-        final DBHelper db = new DBHelper(this);
+        final DB db = new DB(this);
         final int idContacto = Integer.parseInt(getIntent().getExtras().getString("id"));
         String nombre =getIntent().getExtras().getString("nom");
         setTitle(nombre);
