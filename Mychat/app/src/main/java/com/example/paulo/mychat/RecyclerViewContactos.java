@@ -2,24 +2,19 @@ package com.example.paulo.mychat;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.PopupMenu;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.Toast;
 
 import java.util.Collections;
 import java.util.List;
 
-/**
- * Created by paulo on 6/9/2017.
- */
+
 
 public class RecyclerViewContactos extends RecyclerView.Adapter<View_Holder> {
     List<ItemsContactos> list = Collections.emptyList();
@@ -78,3 +73,4 @@ public class RecyclerViewContactos extends RecyclerView.Adapter<View_Holder> {
         lastPosition = position;
     }
 }
+
